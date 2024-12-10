@@ -1,0 +1,211 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+.container-card-mae{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    height: 500px;
+
+}
+
+
+.container-card .card{
+    position: relative;
+    width: 640px;
+    height: 480px;
+    margin: 30px;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.815);
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.877);
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+
+}
+
+
+
+.card1-img1{
+    margin-top: 9px;
+    position: relative;
+    width: 6=40px;
+    height: 480px;
+
+
+}
+
+
+
+
+.container-card .card .content{
+    padding: 10px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 10px;
+    transition: 0.5s;
+}
+
+.container-card .card:hover .content{
+
+
+  
+    opacity: 12;
+
+
+
+}
+
+
+
+.container-card .card .content h2{
+    font-family:cursive;
+    position: relative;
+    top: -270px;
+    right: 90px;
+    font-size:20px;
+   color:rgb(255, 255, 255);
+
+    pointer-events: none;
+}
+
+.container-card .card .content h3{
+    font-size: 1.8em;
+    color: rgb(247, 8, 8);
+    z-index: 1;
+}
+
+.container-card .card .content p{
+
+font-size: 1.8em;
+color: wheat;
+font-weight: 300;
+}
+.container-card .card .content a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background-color: rgba(240, 255, 255, 0.945);
+    color: rgb(243, 0, 0);
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+
+}
+
+
+
+/*Responsive  */
+@media (max-width: 415px) {
+    /* General Styles */
+    * {
+      box-sizing: border-box; /* Ensures consistent sizing */
+    }
+
+
+    .container-card-mae{
+        margin-top: 10px;
+        margin-bottom: 0px;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        height: 190px;
+    
+    }
+
+    .container-card .card{
+        position: relative;
+        width: 415px;
+        height: 480px;
+        margin: 30px;
+        box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.815);
+        border-radius: 15px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid rgba(0, 0, 0, 0.877);
+        border-left: 1px solid rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(2px);
+    
+    }
+    
+    
+    
+    .card1-img1{
+        margin-top: 0px;
+        position: relative;
+        width: 240px;
+        height: 180px;
+        background-size: cover;
+    
+    
+    }
+    
+    
+    
+    
+    .container-card .card .content{
+        padding: 10px;
+        text-align: center;
+        transform: translateY(100px);
+        opacity: 10px;
+        transition: 0.5s;
+    }
+    
+    .container-card .card:hover .content{
+    
+    
+      
+        opacity: 12;
+    
+    
+    
+    }
+    
+    
+    
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
