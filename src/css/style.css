@@ -16,19 +16,15 @@ body {
 }
 .logo{
 
- 
-  border-radius: 9px;
+  width: 198px;
+  height: 170px;
+  background-size: cover;
   
 }
 /*Estilização Menu */
 
-.header-menu {
-  background-color: #f50e0e;
-  max-width: auto;
-}
-
 .container-menu {
-  background-color: #000000;
+  background-color: #000000b7;
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -41,7 +37,7 @@ nav {
   position: relative;
   width: 524px;
   height: 50px;
-  background: #2f2e2e;
+  background: #2f2e2ec5;
   border-radius: 8px;
   display: flex;
   justify-content: center;
@@ -120,46 +116,7 @@ li, a, button {
 }
 
 /*Estilização slider*/
-.container-slider {
-  justify-content: center;
-  justify-content: center !important;
-  justify-items: center;
-}
 
-.slider {
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-  width: 100%;
-  position: relative;
-}
-
-.slide .slide1 {
-  width: 300px;
-  height: 300px;
-  float: left;
-}
-
-.slide .slide2 {
-  border-radius: 25px;
-  width: 300px;
-  height: 300px;
-  float: left;
-}
-
-.slide .slide3 {
-  border-radius: 25px;
-  width: 300px;
-  height: 300px;
-  float: left;
-}
-
-.slide .slide4 {
-  border-radius: 25px;
-  width: 250px;
-  height: 300px;
-  float: left;
-}
 
 /*Estilização Container Projects*/
 
@@ -177,55 +134,125 @@ li, a, button {
   background-color: #4f54589d;
 }
 
-.container-projects {
-  height: 200px;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  justify-items: center;
-  text-align: justify;
-  padding: 20px;
-  color: #035677;
-  font-family: "Montserrat", sans-serif;
-  background-color: #063d7c69;
-}
+
 
 h3:hover {
   color: #fff700;
 }
 
 
-.frame{
-  margin-top: 30px;
-  border-radius: 12px;
-  margin-bottom: 20px;
+
+.youtube-icon {
+
+ 
+
+  /* ... outras propriedades ... */
+  animation: girar 6s infinite ease-in-out;
+  
+}
+
+@keyframes girar {
+  0% {
+    transform: rotateY(0deg) ;
+  }
+  50% {
+    transform: rotateY(180deg) ;
+
+
+  }
+  100% {
+      transform: rotateY(360deg) ;
+
+
+    }
+ 
+}
+.youtube-icon img {
+  height: 350px;
+  width: 400px;
+border-radius: 490px;
+box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.356);
+border-top: 1px  solid rgba(39, 38, 38, 0.877);
+border-left: 1px solid rgba(71, 70, 70, 0.164);
+border-right:1px solid rgba(7, 7, 7, 0.096) ;
+border-radius: 330px;
+background-color: #00000018;
+}
+
+
+.box{
+background-color: rgba(0, 0, 0, 0.356);
+  margin-top:0px;
   display: flex;
   justify-content: center;
   justify-items: center;
-  gap: 10px;
 }
 
-.frame iframe{
-  border-radius: 12px;
+/*Estilização Makers Parceiro Videos1*/
+
+
+
+.container-fileira1-videos{
+width: auto;
+ display: flex;
+ flex-direction:row;
+  height: 600px;
+  background-color: #035677;
+
+ 
+  margin-bottom: 900px;
+  gap: 50px;
 }
 
 
-.frame2{
-  margin-top: 30px;
-  border-radius: 12px;
-  margin-bottom: 20px;
+
+.video1{
+  padding: 20px;
+ 
   display: flex;
   justify-content: center;
   justify-items: center;
+  margin-top: 7px;
+ width: 420px;
+  background-color: #fff700;
 }
 
-.frame2 iframe{
-  border-radius: 12px;
+.titulo-video1{
+ 
+  margin-top: -10px;
+  text-align: center;
+  background-color: #747779;
+}
+
+.texto{
+  margin-top: 30px;
+  text-align: center;
 }
 
 
 
+.video2{
+  padding: 20px;
+ 
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 7px;
+ width: 420px;
+  background-color: #fff700;
+}
+
+.titulo-video2{
+ 
+  margin-top: -10px;
+  text-align: center;
+  background-color: #747779;
+}
+
+.texto2{
+  margin-top: 30px;
+  text-align: center;
+}
 
 
 
@@ -234,53 +261,6 @@ h3:hover {
 
 /*Estilização Container Sobre/About*/
 
-.container-sobre {
-  background-color: #00000090;
-  padding: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  text-align: center;
-}
-
-/*Estilização Container Redes*/
-
-.container-redes {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  text-align: center;
-  color: #edf0f1;
-  background-color: #928888aa;
-  padding: 5px;
-    gap: 15px;
-}
-.rede-gitHub{
-  margin-top: 30px;
-}
-
-.rede-instam {
-  margin-top: 30px;
-}
-/*Estilização Container Rodapé*/
-.container-rodape {
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  text-align: center;
-  color: #edf0f1;
-  background-color: #928888aa;
-  margin-bottom: 0px;
-  font-size: 15px;
-  padding-bottom: 5px;
-  padding-top: 1px;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 /*Responsive  */
 @media (max-width: 415px) {  
@@ -371,64 +351,4 @@ nav{
 
   /*Estilização slider RESPONSIVE */
 
-  .container-projects {
-    height: 180px;
-    margin: 10px;
-    display: flex;
-    margin-left: 0;
-    margin-right: 0;
-    gap: 20px;
-    justify-items: center;
-    text-align: justify;
-    padding: 20px;
-    color: #035677;
-    font-family: "Montserrat", sans-serif;
-    background-color: #000000;
-  }
-  .pj1 h3 {
-    letter-spacing: 2px;
-    color: #ffffff;
-    font-size: 10px;
-  }
-  .pj2 h3 {
-    letter-spacing: 2px;
-    color: #ffffff;
-    font-size: 10px;
-  }
-  .pj3 h3 {
-    letter-spacing: 2px;
-    color: #ffffff;
-    font-size: 10px;
-  }
-  .pj4 h3 {
-    letter-spacing: 2px;
-    color: #ffffff;
-    font-size: 10px;
-  }
-
-  h3:hover {
-    color: #fff700;
-  }
-
-  .container-sobre {
-    background-color: #000000;
-    padding: 20px;
-    margin-top: 30px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-    font-size: 12px;
-  }
-
-  .container-rodape {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    background-color: #000000aa;
-    padding: 20px;
-  }
 }
