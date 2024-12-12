@@ -167,8 +167,8 @@ h3:hover {
 }
 .youtube-icon img {
 height: 350px;
-width: 400px;
-border-radius: 490px;
+width: 350px;
+border-radius: 40px;
 box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.356);
 border-top: 1px  solid rgba(39, 38, 38, 0.877);
 border-left: 1px solid rgba(71, 70, 70, 0.164);
@@ -227,9 +227,12 @@ a{
 }
 
 .texto{
-
+  letter-spacing: 0.2px;
+width: 400px;
+margin-left: 10px;
+  text-align:justify;
   margin-top: 30px;
-  text-align: center;
+  
 }
 
 
@@ -452,7 +455,10 @@ nav{
     gap: 10px !important;
   }
 
-
+.box img{
+  width: 240px!important;
+  height: 240px!important;
+}
   /*Estilização slider RESPONSIVE */
 
 }
