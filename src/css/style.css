@@ -144,8 +144,6 @@ h3:hover {
 
 .youtube-icon {
 
- 
-
   /* ... outras propriedades ... */
   animation: girar 6s infinite ease-in-out;
   
@@ -168,8 +166,8 @@ h3:hover {
  
 }
 .youtube-icon img {
-  height: 350px;
-  width: 400px;
+height: 350px;
+width: 400px;
 border-radius: 490px;
 box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.356);
 border-top: 1px  solid rgba(39, 38, 38, 0.877);
@@ -193,60 +191,66 @@ background-color: rgba(0, 0, 0, 0.356);
 
 
 .container-fileira1-videos{
-width: auto;
- display: flex;
- flex-direction:row;
-  height: 600px;
-  background-color: #035677;
 
- 
+display: flex;
+justify-content: center;
+flex-direction: row;
+flex-wrap: wrap;
+  height: 570px;
+  background-color: #044566de;
+  gap: 10px;
   margin-bottom: 900px;
-  gap: 50px;
+
+}
+a{
+  color: black;
 }
 
-
+/*Estilização Makers Parceiro Videos1*/
 
 .video1{
   padding: 20px;
- 
+ height: 540px;
   display: flex;
   justify-content: center;
   justify-items: center;
   margin-top: 7px;
  width: 420px;
-  background-color: #fff700;
+  background-color: #ffffff;
 }
 
 .titulo-video1{
- 
+  
   margin-top: -10px;
   text-align: center;
-  background-color: #747779;
+  background-color: #ffffff;
 }
 
 .texto{
+
   margin-top: 30px;
   text-align: center;
 }
 
 
 
+/*Estilização Makers Parceiro Videos2*/
 .video2{
   padding: 20px;
- 
+  height: 540px;
   display: flex;
   justify-content: center;
   justify-items: center;
   margin-top: 7px;
  width: 420px;
-  background-color: #fff700;
+  background-color: #ffffff;
 }
 
 .titulo-video2{
  
   margin-top: -10px;
   text-align: center;
-  background-color: #747779;
+  background-color: #ffffff;
 }
 
 .texto2{
@@ -256,9 +260,99 @@ width: auto;
 
 
 
+/*Estilização Makers Parceiro Videos3*/
+
+.video3{
+  padding: 20px;
+  height: 540px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 7px;
+ width: 420px;
+  background-color: #ffffff;
+}
+
+.titulo-video3{
+ 
+  margin-top: -10px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.texto3{
+  margin-top: 30px;
+  text-align: center;
+}
 
 
 
+/*Estilização Makers Parceiro Videos4*/
+
+.video4{
+  padding: 20px;
+  height: 540px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 7px;
+ width: 420px;
+  background-color: #f8f8f8;
+}
+
+.titulo-video4{
+ 
+  margin-top: -10px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.texto4{
+  margin-top: 30px;
+  text-align: center;
+}
+
+
+
+
+
+/*espaço div entre as fileiras*/
+.espacofileiras{
+  margin-top: -900px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  background-color: #e5e7e8;
+  height: 20px;
+}
+
+/*Estilização Makers Fileira 2*/
+
+.container-fileira2-videos{
+margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+    height: 530px;
+    background-color: #044566de;
+    gap: 10px;
+   
+  }
+  a{
+    color: black;
+  }
+
+  .espacofileiras2{
+    margin-top: 30px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background-color: #e5e7e8;
+    height: 20px;
+  }
 /*Estilização Container Sobre/About*/
 
 
@@ -267,15 +361,22 @@ width: auto;
   
 
   /*Estilização Menu */
-
+header{
+  display: flex;
+  justify-content: center;
+  background-color: #06405d;
+}
   .container-menu {
+
     display: flex!important;
     align-items: center;
     justify-content: center;
     justify-items: center;
     gap: 2px;
   }
-
+.container-menu{
+  background-color: #06405d;
+}
   /*span do menu Hover */
 nav span {
   position: absolute;
@@ -315,9 +416,12 @@ nav a:nth-child(4):hover ~ span {
   }
 
   .logo{
-    width: 40px!important;
-    margin-right: 50px;
+    width: 52px!important;
+    height: 52px;
+    margin-right: 5px;
     margin-left: 0px;
+    background-color: #1414145e;
+    border-radius: 50px;
   }
 nav{
   width: 290px;
