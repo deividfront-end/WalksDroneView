@@ -1,3 +1,7 @@
+
+
+
+
 * {
   height: none;
   margin: 0;
@@ -13,24 +17,33 @@ body {
   font-family: "Poppins", sans-serif;
   background-image: url(../img/fundo2.jpg);
   background-size: cover;
+  
+}
+header{
+  background-color: #0d0a0ade;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
 }
 .logo{
 
-  width: 198px;
-  height: 170px;
+  width: 158px;
+  height: 120px;
   background-size: cover;
   
 }
 /*Estilização Menu */
 
 .container-menu {
-  background-color: #000000b7;
+
   display: flex;
   justify-content: center;
   justify-items: center;
   align-items: center;
   gap: 10px;
+  height: 120px;
   margin-top: 0px;
+  width: 792px; 
 }
 
 nav {
@@ -49,7 +62,7 @@ nav a {
   display: inline-block;
   font-size: 1em;
   font-weight: 500;
-  color: #e5e7e8;
+  color: #000000;
   text-decoration: none;
   padding: 0 23px;
   z-index: 1;
@@ -61,12 +74,12 @@ nav span {
   left: 0;
   width: 523px;
   height: 100%;
-  background: #06405d;
-  border-radius: 8px;
+  background: #e1e4e6;
+  border-radius: 5px;
   transition: 0.5s;
 }
 nav a:nth-child(1):hover ~ span {
-  left: 70px;
+  left: 75px;
   width: 60px;
 }
 
@@ -76,12 +89,12 @@ nav a:nth-child(2):hover ~ span {
 }
 
 nav a:nth-child(3):hover ~ span {
-  left: 282px;
+  left: 278px;
   width: 60px;
 }
 
 nav a:nth-child(4):hover ~ span {
-  left: 375px;
+  left: 374px;
   width: 75px;
 }
 
@@ -95,27 +108,137 @@ li, a, button {
 
 /*Estilização Titulo */
 .container-home {
-  margin-top: 50px;
+  margin-top: 60px;
   gap: 20px;
   display: flex;
   justify-content: center;
   justify-items: center;
   align-items: center;
   color: #ffffff;
+  
+}
+
+.container-home h1{
+  font-size: 60px;
+  
+
 }
 
 /*Estilização SubTitulo */
 .conteudo-subtitulo {
   display: flex;
+  text-align: center;
   justify-content: center;
   justify-items: center;
   margin-top: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
+  padding: 10px;
   font-size: 15px;
-  color: #6e6e6e;
+  color: #ffffffd2;
+  background-color:  #615e5e26;
 }
 
 /*Estilização slider*/
+
+.container-servicos-titulo h2{
+ 
+  letter-spacing: 3px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  color: white;
+ 
+}
+.conteudo1{
+ 
+  border-radius: 90px 0px;
+text-align: center;
+  margin-top: 100px;
+  color:#ffffff;
+  background-color: #000000;
+  width: 400px;
+  height: 230px;
+  
+}
+.container-conteudo1{
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+margin-top: -15px;
+  width: 300px;
+  margin-left: 50px;
+}
+.conteudo1 h3{
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+
+
+.entrar-em-contato{
+ 
+  padding: 10px;
+  width: 30px;
+  height: 50px;
+  border: solid 1px ;
+  color: rgb(199, 195, 195);
+  border-radius: 12px 0px ;
+}
+
+
+.entrar-em-contato:hover{
+  background-color: #c8c5c53c;
+}
+
+
+
+
+
+
+.container-servicos {
+display: flex;
+justify-self: stretch;
+justify-content: center;
+gap: 100px;
+height: 400px;
+
+
+ background-color: #000000;
+ 
+}
+
+
+
+
+
+.img2{
+ margin-top: 100px;
+  animation: float 6s ease-in-out infinite;
+}
+
+
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(-70px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*Estilização Container Projects*/
@@ -137,54 +260,11 @@ li, a, button {
 
 
 h3:hover {
-  color: #fff700;
+  color: #c8c5c53c;
 }
 
 
 
-.youtube-icon {
-
-  /* ... outras propriedades ... */
-  animation: girar 6s infinite ease-in-out;
-  
-}
-
-@keyframes girar {
-  0% {
-    transform: rotateY(0deg) ;
-  }
-  50% {
-    transform: rotateY(180deg) ;
-
-
-  }
-  100% {
-      transform: rotateY(360deg) ;
-
-
-    }
- 
-}
-.youtube-icon img {
-height: 350px;
-width: 350px;
-border-radius: 40px;
-box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.356);
-border-top: 1px  solid rgba(39, 38, 38, 0.877);
-border-left: 1px solid rgba(71, 70, 70, 0.164);
-border-right:1px solid rgba(7, 7, 7, 0.096) ;
-border-radius: 330px;
-background-color: #00000018;
-}
-
-
-.box{
-background-color: rgba(0, 0, 0, 0.356);
-  margin-top:0px;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-}
 
 /*Estilização Makers Parceiro Videos1*/
 
@@ -357,6 +437,38 @@ margin-top: 10px;
     height: 20px;
   }
 /*Estilização Container Sobre/About*/
+.container-redes {
+  display: flex;
+  justify-content: center;
+  
+  justify-items: center;
+  text-align: center;
+  color: #edf0f1;
+  background-color: #000000;
+  gap: 30PX;
+  
+  padding: 20px;
+  
+}
+.container-redes a{
+color: #ffffff;
+font-size: 14px;
+}
+
+.rodape a{
+  font-size: 13px;
+  color: rgba(147, 143, 143, 0.575);
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  height: 20px;
+}
+
+
+
+/*Estilização Container Rodapé*/
+
 
 
 /*Responsive  */
@@ -459,6 +571,22 @@ nav{
   width: 240px!important;
   height: 240px!important;
 }
+
+
+.container-home {
+  margin-top: 60px;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  color: #ffffff;
+  
+}
+
+
+
   /*Estilização slider RESPONSIVE */
 
 }
+
