@@ -1,12 +1,9 @@
 
-
-
-
 * {
-  height: none;
+  height:none;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: content-box;
   font-family: "Poppins", sans-serif;
 }
 
@@ -15,21 +12,57 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  background-image: url(../img/fundo2.jpg);
+ background-color: #9c9c9c;
   background-size: cover;
   
 }
+
+
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #30e60b; /* Cor do WhatsApp */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+  font-size: 30px; /* Tamanho do ícone */
+  color: #fff; /* Cor do ícone */
+}
+
+.whatsapp-button img {
+  width: 41px;
+  
+}
+
+
+.whatsapp-button:hover {
+  width: 61px;
+  height: 61px;
+  background-color: #09aa39e0;
+}
+
+
+
+
+
 header{
-  background-color: #000000de;
+  background-color: #000000;
   display: flex;
   justify-content: center;
   justify-items: center;
 }
 .logo{
 
-  width: 158px;
-  height: 120px;
-  background-size: cover;
+  width: 58px;
+  height: 58px;
+  
   
 }
 /*Estilização Menu */
@@ -48,9 +81,9 @@ background-color: #000000;
 
 nav {
   position: relative;
-  width: 524px;
+  width: 523px;
   height: 50px;
-  background: #2e2f2ec5;
+  background: #39e539e9;
   border-radius: 8px;
   display: flex;
   justify-content: center;
@@ -144,81 +177,75 @@ li, a, button {
   padding: 20px;
   height: 20px;
   font-size: 15px;
-  background-color: #0c1f3a69;
+  background-color: #010101b5;
 }
-/*Estilização slider*/
+/*container subtitulo Services*/
 
 .container-servicos-titulo h2{
- margin-top: -15px;
-  letter-spacing: 3px;
+  margin-top: 1px;
+   letter-spacing: 3px;
+   display: flex;
+   justify-content: center;
+   justify-items: center;
+   color: rgb(250, 250, 250);
+  
+ }
+.container-servicos {
   display: flex;
+  justify-self: stretch;
   justify-content: center;
-  justify-items: center;
-  color: white;
- 
-}
-.conteudo1{
- 
-  border-radius: 90px 0px;
-text-align: center;
-  margin-top: 100px;
+  gap: 100px;
+  height: 400px;
+  background-color:rgb(0, 0, 0);
   
-  background-color: #000000;
-  width: 400px;
-  height: 230px;
-  
-}
+  }
+
+
 .container-conteudo1{
   display: flex;
   justify-content: center;
   text-align: justify;
-margin-top: -15px;
+  margin-top: -15px;
   width: 300px;
   margin-left: 50px;
   color: white;
-}
- h3{
-  font-size: 30px;
-  color: white!important;
-  margin-bottom: 20px;
  
 }
+.conteudo1{
+  text-align: center;
+  margin-top: 100px;
+  width: 400px;
+  height: 230px;
+  color: #0a8703;
+  
+}
 
+ h3{
+  margin-top: -0px;
+  font-size: 27px;
+  color: rgb(255, 255, 255)!important;
+  margin-bottom: 30px;
+ 
+ 
+ 
+}
 
 
 .entrar-em-contato{
- 
-  padding: 10px;
-  width: 30px;
-  height: 50px;
-  border: solid 1px ;
-  color: rgb(199, 195, 195);
-  border-radius: 12px 0px ;
-}
+  margin-top: 20px;
+   padding: 10px;
+   width: 30px;
+   height: 50px;
+   border: solid 1px ;
+   color: rgb(244, 244, 244);
+   border-radius: 12px 0px ;
+ }
 
 
-.entrar-em-contato:hover{
-  background-color: #c8c5c53c;
-}
+ .entrar-em-contato:hover{
+  background-color: #0a8703;
 
-
-
-
-
-
-.container-servicos {
-display: flex;
-justify-self: stretch;
-justify-content: center;
-gap: 100px;
-height: 400px;
-
-
- background-color: #000000;
- 
-}
-
-
+ }
 
 
 
@@ -239,6 +266,48 @@ height: 400px;
 }
 
 
+
+
+
+/*Estilização Container IMAGENS E VIDEOS*/
+
+
+
+.container-imagensevideos {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+
+  background-color:rgb(0, 0, 0);
+  
+  height: 530px;
+  
+  }
+
+  .container-imagens-foto{
+   margin-top: 15px;
+   
+    background-image: url(../img/SERVIO\ BANNER.png);
+   display: flex;
+   justify-content: center;
+    background-repeat: no-repeat;
+  background-size:coVER;
+   width: 1000px;
+   height: 500px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Estilização Container Projects*/
 
 .titulo-projects {
@@ -247,13 +316,14 @@ height: 400px;
   justify-items: center;
   padding: 20px;
   height: 20px;
-  font-size: 14px;
-  background-color: #0c1f3a69;
+ 
+  background-color: #010101b5;
 }
 .titulo-projects h3 {
-margin-top: -16px;
+margin-top: px;
   text-align: center;
-  background-color: #062651;
+  background-color: #eaedf1;
+  font-size: 23px;
 }
 
 
@@ -272,7 +342,7 @@ display: flex;
 justify-content: center;
 flex-direction: row;
 flex-wrap: wrap;
-  height: 570px;
+  height: 590px;
   background-color: #030303;
   gap: 10px;
   margin-bottom: 0px;
@@ -291,7 +361,7 @@ a{
   justify-content: center;
   justify-items: center;
   margin-top: 7px;
- width: 420px;
+ width: 324px;
   background-color: #ffffff;
 }
 
@@ -304,10 +374,10 @@ a{
 
 .texto{
   letter-spacing: 0.2px;
-width: 400px;
+width: 300px;
 margin-left: 10px;
-  text-align:justify;
-  margin-top: 30px;
+  text-align:center;
+  margin-top: 20px;
   
 }
 
@@ -321,7 +391,7 @@ margin-left: 10px;
   justify-content: center;
   justify-items: center;
   margin-top: 7px;
- width: 420px;
+  width: 324px;
   background-color: #ffffff;
 }
 
@@ -333,10 +403,12 @@ margin-left: 10px;
 }
 
 .texto2{
-  margin-top: 30px;
+  margin-top: 20px;
   text-align: center;
 }
-
+.cliqueAqui{
+  color: #000000;
+}
 
 
 /*Estilização Makers Parceiro Videos3*/
@@ -348,7 +420,7 @@ margin-left: 10px;
   justify-content: center;
   justify-items: center;
   margin-top: 7px;
- width: 420px;
+  width: 324px;
   background-color: #ffffff;
 }
 
@@ -360,7 +432,7 @@ margin-left: 10px;
 }
 
 .texto3{
-  margin-top: 30px;
+  margin-top: 20px;
   text-align: center;
 }
 
@@ -368,73 +440,12 @@ margin-left: 10px;
 
 /*Estilização Makers Parceiro Videos4*/
 
-.video4{
-  padding: 20px;
-  height: 540px;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  margin-top: 7px;
- width: 420px;
-  background-color: #f8f8f8;
-}
-
-.titulo-video4{
- 
-  margin-top: -10px;
-  text-align: center;
-  background-color: #ffffff;
-}
-
-.texto4{
-  margin-top: 30px;
-  text-align: center;
-}
 
 
 
-
-
-/*espaço div entre as fileiras*/
-.espacofileiras{
-  margin-top: -899px;
-  margin-bottom: 0px;
-  width: auto;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  background-color: #f2eded;
-  height: 20px;
-  padding: 20px;
-}
 
 /*Estilização Makers Fileira 2*/
 
-.container-fileira2-videos{
-margin-top: 0px;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-    height: 550px;
-    background-color: #000000de;
-    gap: 10px;
-   
-  }
-  a{
-    color: black;
-  }
-
-  .espacofileiras2{
-    padding: 20px;
-    margin-top: 0px;
-    width: auto;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    background-color: #e5e7e8;
-    height: 20px;
-  }
 /*Estilização Container Sobre/About*/
 .container-redes {
   display: flex;
@@ -492,15 +503,17 @@ font-size: 14px;
   
 
   /*Estilização Menu */
-.container-menu img{
-  margin-left: 10px;
-}
 
+.container-menu .logo{
+ 
+  width: 50px!important;
+  height: 52px!important;
+ 
+  
+}
 .container-menu{
-  display: flex;
-  justify-content: center!important;
-  width: 804px;
-  height: 80px;
+  
+  width: 200px!important;
   
   background-color: #000000;
 }
@@ -512,38 +525,39 @@ nav span {
   position: absolute;
   top: 0;
   left: 0;
-  width: 295px;
+  width: 289px!important;
  
   height: 100%;
   background: #f3f4f4;
-  border-radius: 8px;
+  border-radius:  8px;
   transition: 0.5s;
 }
 nav a:nth-child(1):hover ~ span {
-  left: 2px;
-  width: 72px!important;
+  left: 1px;
+  width: 68px!important;
 }
 
 nav a:nth-child(2):hover ~ span {
-  left: 75px;
-  width: 72px!important;
+  left: 72px;
+  width: 68px!important;
 }
 
 nav a:nth-child(3):hover ~ span {
-  left: 146px;
+  left: 142px;
   width: 75px!important;
 }
 
 nav a:nth-child(4):hover ~ span {
-  left: 221px;
-  width: 72px!important;
+  left: 217px;
+  width: 70px!important;
 }
 /*Botoes do Menu nav */
   nav a {
-    display: flex;
-    margin-left: 5px;
-  
-    border-radius: 12px;
+  display: flex;
+  justify-content: center!important;
+  margin-left: 0px!important;
+   
+     
   }
 
 
@@ -553,35 +567,46 @@ nav a:nth-child(4):hover ~ span {
     margin-right: -10px;
     margin-left: -25px;
   }
-
 nav{
-  width: 290px;
-  margin-left: 10px;
+  margin-right: -29px;
+  margin-left: 4px!important;
+  display:flex!important;
+  justify-content: center!important;
+  justify-items: center!important;
+  width: 305px!important;
+  gap: 2px!important;
+
+ 
+  
 }
+  
+
   nav .home {
     display: flex;
     justify-content: center;
-    width: 68px;
+    width: 23px!important;
+    
   }
 
   nav .projects {
     display: flex;
     justify-content: center;
-    width: 68px;
-    gap: 10px !important;
+    width: 25px;
+  
   }
 
   nav .about {
     display: flex;
     justify-content: center;
-    width: 68px;
-    gap: 10px !important;
+    width: 25px;
+    
   }
   nav .contact {
+ 
     display: flex;
     justify-content: center;
-    width: 68px;
-    gap: 10px !important;
+    width: 25px;
+   
   }
 
 .box img{
@@ -603,153 +628,268 @@ nav{
 
 
 .container-servicos-titulo{
-  background-color: #000000;
+  background-color: #ffffff;
   padding: 20px;
-  color: rgba(225, 209, 209, 0.437);
-  border: solid 1px;
+ 
+ 
 }
 
 .container-home h1{
   text-align: center;
   font-size: 30px;
+  color: #ffffff;
 }
 
 .container-servicos-titulo h2{
-  font-size: 15px;
+  font-size: 20px;
+  margin-top: 0px;
+  color: #000000;
   
 }
 
 
-  /*Estilização div serviços */
+  /*Estilização div serviços codigos acima ok */
   
 
 
+
+
+  .container-servicos-titulo h2{
+    margin-top: 1px;
+     letter-spacing: 3px;
+     display: flex;
+     justify-content: center;
+     justify-items: center;
+     color: rgb(0, 0, 0);
+    
+   }
+ /*Estilização div serviços codigos acima ok */
+
+
+
+
+
+  
+    .container-servicos {
+      display: flex;
+      justify-items: center!important;
+      justify-content: center!important;
+    
+      height: 310px;
+    
+       
+      }
+  
+      .container-box-img{
+       margin-left: 55px;
+       width: 160px;
   
   
-  .container-servicos {
-    display: flex;
-    justify-items: center!important;
-    justify-content: center!important;
   
-    height: 260px;
   
-     
-    }
+  
+      }
 
-    .container-box-img{
-     margin-left: 55px;
-     width: 160px;
-
-
-
-
-
-    }
-
-    .img2{
-     width: 165px;
-     height: 190px;
-    }
-
-
-.servicos-box{
-  margin-top: 20px;
- margin-left: -120px;
-  width: 200px;
-  height: 200px;
+   
+  
+      .img2{
+       width: 165px;
+       height: 190px;
+      }
+  
+  
+  .servicos-box{
+    margin-top: 20px;
+   margin-left: -120px;
+    width: 200px;
+    height: 200px;
+   
+  
+  }
+  
  
-
-}
-
-.service{
-
-  margin-top: -100px!important;
- 
-   width: 200px;
-   height: 200px;
-}
-
-
-.conteudo1{
   
- width: 190px;
- margin-left: 120px;
-  border-radius: 12px;
-  text-align: justify!important;
+  .conteudo1{
+    margin-top: 10px;
+    padding: 10px;
+    width: 205px;
+    margin-left: 120px;
+    border-radius: 12px;
+    text-align: justify!important;
   
-  color:#ffffff;
- 
- 
-  font-size: 11px;
+    color:#ffffff;
+    font-size: 11px;
+    height: 200px;
+    
+  }
   
-}
-
-.container-conteudo1{
-  width: 190px;
-  height: 70px;
-  margin-top: 20px;
-  margin-left: 5px;
-  background-color: #030303;
-}
-.conteudo1 h3{
-  margin-left: 5px;
-  width: 195px;
-  font-size: 19px!important;
-}
-
-
-  .entrar-em-contato {
-    background-color: #062651;
-    text-align: center;
-    width: 30px!important;
-    font-size: 10px;
-    margin-top: 0px;
-    margin-left: 30px;
+  .container-conteudo1{
+    width: 180px;
+    height: 130px;
+    margin-top: -20px;
+  
+    margin-left: 5px!important;
+    margin-right: 5px!important;
+    
   }
 
-
-
-
-.titulo-projects{
-  background-color: #000000;
-  padding: 20px;
-  color: rgb(255, 255, 255);
-  border: solid 1px;
+  .solicite-orcamento-titulo{
+   
+   height: 20px!important;
  
+    width: 190px!important;
+    text-align: center;
+    font-size: 16px!important;
+  }
+
+  
+    .entrar-em-contato {
+      
+      text-align: center;
+      width: 30px!important;
+      font-size: 10px;
+      
+      margin-left: 30px;
+    }
+
+    .container-botao-contato{
+      margin-top: -10px;
+      margin-left: 20px;
+
+    }
+  
+
+
+
+    .titulo-projects {
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+      padding: 20px;
+      height: 20px;
+     
+      background-color: #ffffff;
+    }
+    .titulo-projects h3 {
+    
+      text-align: center;
+     
+      font-size: 22px!important;
+      color: #000000!important;
+      letter-spacing: 3px!important;
+      
+    }
+
+
+
+
+
+
+
+/*Codigos acima Ok*/
+
+.container-imagensevideos{
+  height: 240px!important;
 }
 
-
-.titulo-projects h3{
- 
-  color: rgb(255, 255, 255);
- 
-  font-size: 15px;
-}
-
-
-
-.container-fileira1-videos{
-
-  display:flex;
+.container-imagens-foto{
+  margin-top: 15px;
+  
+   background-image: url(../img/SERVIO\ BANNER.png);
+  display: flex;
   justify-content: center;
-  justify-items: center;
-  height: 2220px!important;
-  background-color: #000000;
+   background-repeat: no-repeat;
+ background-size:contain;
+  width: 1000px;
+  height: 500px;
+ }
+
+
+
+
+
+
+
+
+
+
+  .container-fileira1-videos{
+   
+    display: flex!important;
+    justify-content: center!important;
+    flex-direction: row!important;
+    flex-wrap: wrap!important;
+    height: 1695px; ;
+      background-color: #030303;
+      
+     
+      
+    
+    }
+    a{
+      color: black;
+    }
+
+
+    .video1, .video2, .video3{
+      height: 460px;
+      margin-top: 30px!important;
+    }
+  
+  /*Estilização Makers Fileira 2*/
+  
+  /*Estilização Container Sobre/About*/
+  .container-redes {
+    
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px!important;
+    justify-items: center;
+    text-align: center;
+    color: #edf0f1;
+    background-color: #000000;
+    gap: 10px!important;
+    
+    padding: 20px;
+    
+  }
+  .container-redes a{
+  color: #ffffff;
+  font-size: 14px;
+  }
+  
+  
+  .container-rodape{
+  
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    padding: 10px;
+   
+  }
+  .container-rodape i{
+    margin-left: 12px;
+    
+    color: white;
+  }
+  
+  .rodape a{
+    margin-top: 2px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.972);
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    height: 20px;
+  }
+  
+  
+  
 }
 
 
-  /*Estilização div Redes e Rodapé */
 
-
-
-
-
-
- 
-
-
-
-
-}
 
 
